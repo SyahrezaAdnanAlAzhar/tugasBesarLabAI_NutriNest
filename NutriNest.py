@@ -83,11 +83,7 @@ df_larangan_response = pd.read_excel("https://docs.google.com/spreadsheets/d/1BW
 
 # Streamlit app
 st.title("NutriNest")
-st.text("Aku chat bot yang dapat memberikan anda rekomendasi makanan dan olahraga yang menyehatkan serta hal yang perlu dihindari ketika sakit")
-st.text("Aku dapat menyesuaikan kondisi anda :D")
-st.text("Gunakan kata kunci `makan` dalam chat anda untuk mendapatkan rekomendasi makanan sehat")
-st.text("Gunakan kata kunci `olahraga` dalam chat anda untuk mendapatkan rekomendasi olahraga")
-st.text("Gunakan kata kunci `larangan` dalam chat anda untuk mendapatkan informasi mengenai hal yang perlu dihindari ketika sakit")
+st.text("Aku chat bot yang dapat memberikan anda rekomendasi makanan dan /nolahraga yang menyehatkan serta hal yang perlu dihindari ketika sakit")
 
 # Inisialisasi session state
 if "messages" not in st.session_state:
