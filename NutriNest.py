@@ -2,8 +2,12 @@ import pandas as pd
 import numpy as np
 import nltk
 nltk.download('stopwords')
-nltk.download('punkt')
+# nltk.download('punkt')
 nltk.download('wordnet')
+
+nltk.data.path.append('/home/adminuser/nltk_data')
+nltk.download('punkt', download_dir='/home/adminuser/nltk_data')
+
 import re
 import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
